@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ConstrucCalc - Registro</title>
+    <meta name="description" content="Calculadora de materiales de construccion">
+    <meta name="keywords" content="calculadora,ConstruCalc, materiales, construccion, muro , viga, columnas , contrapiso, techo, pisos,pintura">
+    <meta name="author" content="juan pablo devia peña y jilfred jimenez chacon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="login-container">
+
+    <!-- LADO IZQUIERDO: Fondo Azul con la Tarjeta de Registro -->
+    <div class="right-panel">
+      <div class="login-card">
+        <form class="form-login" action="" method="post">
+          <h2>REGÍSTRATE</h2>
+
+          <!-- Campo Usuario -->
+          <div class="circle-user">
+            <i class="fa-solid fa-circle-user"></i>
+            <input type="text" id="username" name="username" placeholder="Usuario" required>
+          </div>
+        
+          <div class="circle-email">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email"placeholder="Correo"maxlength="30"pattern="[a-zA-Z0-9]+(/.)*@([a-zA-Z0-9]+)*[.][a-zA-Z]{2,5}"required>
+          </div>
+
+
+
+          <!-- Campo Contraseña -->
+          <div class="circle-password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Contraseña"pattern="[0-9]{8,25}"required>
+          </div>
+
+          <div class="circle-password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Confirmar Contraseña" pattern="[0-9]{8,25}"required>
+          </div>
+          <h3>Perfl</h3>
+          <div class="select-profile">
+          
+          <select id="profile"name="profile"required >
+            <option value=""disable selected hidden>Seleccionar Perfil </option>
+            <option value="Administrador">Admistrador</option>
+            <option value="Empleado">Empleado</option>
+          </select>
+        </div>
+          <div class="ingresar">
+            <button type="submit" class="submit">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: Fondo Blanco con el Logo -->
+    <div class="left-panel">
+      <img src="img/logo.png" alt="Logo de ConstrucCalc" class="logo">
+    </div>
+
+  </div>
+</body>
+</html>

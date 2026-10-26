@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConstrucCalc - Materiales</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="materiales.css">
+<script defer src="materiales.js"></script>
+<script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header-dashboard">
+    <div class="header-info">
+    <img class="logo-header" src="img/logo.png" alt="ConstrucCalc">
+    <h1>Gestión de materiales</h1>
+    </div>
+    <div class="header-user">
+    <a href="panelprincipal.html" style="text-decoration:none;color:inherit">
+        Volver al panel <i class="fa-solid fa-house"></i>
+    </a>
+    </div>
+</header>
+
+<main class="materials-page">
+    <section class="materials-intro">
+    <h2>Inventario de ferretería</h2>
+    <p>Agrega, consulta, edita y elimina materiales.</p>
+    </section>
+
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+
+    <div class="materials-grid">
+    <!-- Formulario para registrar / editar materiales -->
+    <section class="material-form-card">
+        <h3 id="form-title">Registrar material</h3>
+        <form id="material-form">
+        <input type="hidden" id="material-id">
+
+        <label for="nombre">Nombre del material</label>
+        <input id="nombre" name="nombre" required maxlength="80" placeholder="Ej. Cemento gris">
+
+        <label for="categoria">Categoría</label>
+        <select id="categoria" name="categoria" required>
+            <option value="">Selecciona una categoría</option>
+            <option>Cementos</option>
+            <option>Agregados</option>
+            <option>Mampostería</option>
+            <option>Acabados</option>
+            <option>Pinturas</option>
+            <option>Herramientas</option>
+            <option>Otros</option>
+        </select>
+
+        <label for="unidad">Unidad de medida</label>
+        <select id="unidad" name="unidad" required>
+            <option value="">Selecciona una unidad</option>
+            <option>bulto</option>
+            <option>unidad</option>
+            <option>kg</option>
+            <option>m</option>
+            <option>m²</option>
+            <option>m³</option>
+            <option>galón</option>
+            <option>litro</option>
+        </select>
+
+        <label for="precio">Precio unitario (COP)</label>
+        <input type="number" id="precio" min="0" step="1" required placeholder="Ej. 38000">
+
+        <label for="stock">Cantidad en inventario</label>
+        <input type="number" id="stock" min="0" step="1" required placeholder="Ej. 50">
+
+        <div class="form-actions">
+            <button class="btn-calc" type="submit" id="save-button">Guardar material</button>
+            <button class="btn-clear" type="button" id="cancel-button" hidden>Cancelar edición</button>
+        </div>
+        </form>
+    </section>
+
+    <!-- Tabla de materiales cargados -->
+    <section class="material-list-card">
+        <div class="list-heading">
+        <h3>Materiales registrados</h3>
+        <input type="search" id="search" placeholder="Buscar material..." aria-label="Buscar material">
+        </div>
+
+        <div class="table-wrap">
+        <table>
+            <thead>
+            <tr>
+                <th>Material</th>
+                <th>Categoría</th>
+                <th>Unidad</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody id="materials-body">
+            <tr>
+                <td colspan="6">Cargando materiales...</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <p class="small-note">Los precios son datos de ejemplo; actualízalos según los valores reales de tu ferretería.</p>
+    </section>
+    </div>
+</main>
+</body>
+</html>

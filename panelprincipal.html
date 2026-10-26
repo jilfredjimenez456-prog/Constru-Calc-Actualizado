@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ConstrucCalc panel principal </title>
+    <meta name="description" content="Calculadora de materiales de construccion">
+    <meta name="keywords" content="calculadora,ConstruCalc, materiales, construccion, muro , viga, columnas , contrapiso, techo, pisos,pintura">
+    <meta name="author" content="juan pablo devia peña y jilfred jimenez chacon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header class="header-dashboard">
+        <div class="header-info">
+            <img class="logo-header" src="img/logo.png" alt="logo">
+            <h1>Bienvenido a ConstrucCalc ¿Qué deseas calcular hoy?</h1>
+        </div>
+        <div class="header-user">
+            <a href="perfil.html" class="header-user" style="text-decoration: none; color: inherit;">
+            <p>Perfil</p>
+            <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="main-layout">
+
+        <!-- 2. BARRA LATERAL (SIDEBAR) CON BOTONES -->
+<!-- BARRA LATERAL (SIDEBAR) -->
+        <aside class="sidebar">
+            <nav class="menu-calculos">
+                
+                <!-- 1. Muro -->
+                <a href="muro.html" class="btn-menu">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    Calcular muro
+                </a>
+
+                <!-- 2. Viga -->
+                <a href="viga.html" class="btn-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    Calcular viga
+                </a>
+
+                <!-- 3. Columnas -->
+                <a href="columnas.html" class="btn-menu">
+                    <i class="fa-solid fa-columns"></i>
+                    Calcular columnas
+                </a>
+
+                <!-- 4. Contrapiso -->
+                <a href="contrapiso.html" class="btn-menu">
+                    <i class="fa-solid fa-layer-group"></i>
+                    Calcular contrapiso
+                </a>
+
+                <!-- 5. Techo -->
+                <a href="techo.html" class="btn-menu">
+                    <i class="fa-solid fa-house"></i>
+                    Calcular techo
+                </a>
+
+                <!-- 6. Pisos -->
+                <a href="pisos.html" class="btn-menu">
+                    <i class="fa-solid fa-border-all"></i>
+                    Calcular pisos
+                </a>
+
+                <!-- 7. Pintura -->
+                <a href="pintura.html" class="btn-menu">
+                    <i class="fa-solid fa-paint-roller"></i>
+                    Calcular pintura
+                </a>
+
+                <a href="materiales.html" class="btn-menu">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    Gestionar materiales
+                </a>
+
+                <!-- Botón para Salir -->
+                <a href="index.html" class="btn-logout">
+                    <i class="fa-solid fa-person-walking-arrow-right"></i>
+                    Cerrar sesión
+                </a>
+
+            </nav>
+        </aside>
+
+        <!-- 3. ÁREA DE TRABAJO DERECHA (Con la marca de agua) -->
+        <main class="content-area">
+            <img src="img/logo.png" alt="Logo Fondo" class="watermark-logo">
+        </main>
+
+    </div>
+
+</body>
+</html>

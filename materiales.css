@@ -1,0 +1,226 @@
+/* LAYOUT Y ESTRUCTURA GENERAL */
+.materials-page {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 24px 40px;
+    color: #243047;
+}
+
+.materials-intro {
+    margin-bottom: 22px;
+}
+
+.materials-intro h2 {
+    margin: 0 0 8px;
+    color: #173b65;
+}
+
+.materials-intro p,
+.small-note {
+    color: #657186;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+    gap: 22px;
+    align-items: start;
+}
+
+/* TARJETAS / CONTENEDORES */
+.material-form-card,
+.material-list-card {
+    background: #fff;
+    border: 1px solid #e1e7ef;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 5px 20px rgba(28, 48, 74, 0.07);
+}
+
+.material-form-card h3,
+.material-list-card h3 {
+    margin: 0 0 18px;
+    color: #173b65;
+}
+
+/* FORMULARIO E INPUTS */
+.material-form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.material-form-card label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.material-form-card input,
+.material-form-card select,
+.list-heading input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.material-form-card input:focus,
+.material-form-card select:focus,
+.list-heading input:focus {
+    outline: 2px solid #8db8ee;
+    border-color: #3979bd;
+}
+
+/* Acciones del Formulario */
+.form-actions {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.form-actions button {
+    padding: 11px 15px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-clear {
+    background: #e8edf3;
+    color: #27364a;
+}
+
+/* TABLA DE MATERIALES */
+.list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.list-heading input {
+    max-width: 280px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e7ebf1;
+    white-space: nowrap;
+}
+
+th {
+    background: #f4f7fb;
+    color: #334155;
+}
+
+td {
+    color: #334155;
+}
+
+/* Acciones en Tabla */
+.table-actions {
+    display: flex;
+    gap: 7px;
+}
+
+.table-actions button {
+    border: 0;
+    border-radius: 6px;
+    padding: 7px 9px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background: #e0edff;
+    color: #1d4ed8;
+}
+
+.delete-button {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* NOTIFICACIONES Y ESTADOS */
+.notice {
+    display: none;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+
+.notice.success {
+    display: block;
+    background: #dcfce7;
+    color: #166534;
+}
+
+.notice.error {
+    display: block;
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.notice.info {
+    display: block;
+    background: #e0edff;
+    color: #1e40af;
+}
+
+.small-note {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #64748b;
+    padding: 24px;
+}
+
+/* DISEÑO RESPONSIVO (MEDIA QUERIES) */
+@media (max-width: 950px) {
+.materials-grid {
+    grid-template-columns: 1fr;
+}
+
+.list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.list-heading input {
+    max-width: none;
+}
+}
+
+@media (max-width: 600px) {
+.materials-page {
+    padding: 0 12px 25px;
+}
+
+.material-form-card,
+.material-list-card {
+    padding: 15px;
+}
+
+.header-info h1 {
+    font-size: 17px;
+}
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConstrucCalc - Historial de cálculos</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="historial.css">
+<script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header-dashboard">
+  <div class="header-info"><img class="logo-header" src="img/logo.png" alt="logo"><h1>Historial de cálculos</h1></div>
+  <div class="header-user"><a href="panelprincipal.html" style="text-decoration:none;color:inherit">Volver al menú</a></div>
+</header>
+<div class="main-layout">
+  <aside class="sidebar"><nav class="menu-calculos">
+    <a href="panelprincipal.html" class="btn-menu"><i class="fa-solid fa-house"></i> Menú principal</a>
+    <a href="muro.html" class="btn-menu">Calcular muro</a><a href="viga.html" class="btn-menu">Calcular viga</a>
+    <a href="columnas.html" class="btn-menu">Calcular columnas</a><a href="contrapiso.html" class="btn-menu">Calcular contrapiso</a>
+    <a href="techo.html" class="btn-menu">Calcular techo</a><a href="pisos.html" class="btn-menu">Calcular pisos</a>
+    <a href="pintura.html" class="btn-menu">Calcular pintura</a>
+  </nav></aside>
+  <main class="content-area">
+    <section class="history-container">
+      <h2>Mis cálculos guardados</h2>
+      <p class="history-intro">Los cálculos solo aparecen aquí cuando presionas <strong>Guardar cálculo</strong> en la pantalla de resultados.</p>
+      <div id="history-notice" role="status"></div>
+      <div id="history-list"><p>Cargando historial…</p></div>
+    </section>
+  </main>
+</div>
+<script src="historial.js" defer></script>
+</body>
+</html>

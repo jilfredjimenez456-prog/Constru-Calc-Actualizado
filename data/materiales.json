@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cemento gris",
+    "categoria": "Cementos",
+    "unidad": "bulto",
+    "precio": 38000,
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "nombre": "Arena de río",
+    "categoria": "Agregados",
+    "unidad": "m³",
+    "precio": 95000,
+    "stock": 12
+  },
+  {
+    "id": 3,
+    "nombre": "Ladrillo común",
+    "categoria": "Mampostería",
+    "unidad": "unidad",
+    "precio": 900,
+    "stock": 1000
+  },
+  {
+    "id": 4,
+    "nombre": "Pintura blanca",
+    "categoria": "Pinturas",
+    "unidad": "galón",
+    "precio": 68000,
+    "stock": 20
+  },
+  {
+    "id": 5,
+    "nombre": "Baldosa cerámica",
+    "categoria": "Acabados",
+    "unidad": "m²",
+    "precio": 42000,
+    "stock": 35
+  },
+  {
+    "id": 6,
+    "nombre": "Ladrillo Morado",
+    "categoria": "Otros",
+    "unidad": "unidad",
+    "precio": 2600,
+    "stock": 500
+  }
+]

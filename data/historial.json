@@ -1,0 +1,62 @@
+[
+  {
+    "id": 5,
+    "tipo": "Muro de ladrillo",
+    "pagina": "muro.html",
+    "fecha": "2026-10-26T00:37:13.793Z",
+    "datos": {
+      "espesor": "30",
+      "longitud": "21",
+      "altura": "15"
+    },
+    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n315 m²\nCemento\n4.788 kg\nArena\n36,23 m³\nLadrillos\n37.800 unidades"
+  },
+  {
+    "id": 4,
+    "tipo": "Muro de ladrillo",
+    "pagina": "muro.html",
+    "fecha": "2026-10-26T00:30:14.902Z",
+    "datos": {
+      "espesor": "30",
+      "longitud": "120",
+      "altura": "320"
+    },
+    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n38.400 m²\nCemento\n583.680 kg\nArena\n4.416 m³\nLadrillos\n4.608.000 unidades"
+  },
+  {
+    "id": 3,
+    "tipo": "Contrapiso",
+    "pagina": "contrapiso.html",
+    "fecha": "2026-10-26T00:08:14.948Z",
+    "datos": {
+      "espesor": "25",
+      "ancho": "265",
+      "longitud": "124"
+    },
+    "resultado": "Volumen y materiales necesarios\nVolumen del contrapiso\n821.500 m³\nCemento\n86.257.500 kg\nArena\n369.675 m³\nPiedra\n739.350 m³"
+  },
+  {
+    "id": 2,
+    "tipo": "Muro de ladrillo",
+    "pagina": "muro.html",
+    "fecha": "2026-10-26T00:02:11.117Z",
+    "datos": {
+      "espesor": "30",
+      "longitud": "124",
+      "altura": "265"
+    },
+    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n32.860 m²\nCemento\n499.472 kg\nArena\n3.778,9 m³\nLadrillos\n3.943.200 unidades"
+  },
+  {
+    "id": 1,
+    "tipo": "Muro de ladrillo",
+    "pagina": "muro.html",
+    "fecha": "2026-10-26T00:02:05.422Z",
+    "datos": {
+      "espesor": "20",
+      "longitud": "124",
+      "altura": "265"
+    },
+    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n32.860 m²\nCemento\n358.174 kg\nArena\n2.957,4 m³\nLadrillos\n2.957.400 unidades"
+  }
+]

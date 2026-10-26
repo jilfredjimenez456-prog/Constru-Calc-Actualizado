@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ConstrucCalc - Calcular viga</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- 1. BARRA SUPERIOR (HEADER) -->
+    <header class="header-dashboard">
+        <div class="header-info">
+            <img class="logo-header" src="img/logo.png" alt="logo">
+            <h1>Bienvenido Usuario ¿Que deseas calcular hoy?</h1>
+        </div>
+        <div class="header-user">
+            <a href="perfil.html" class="header-user" style="text-decoration: none; color: inherit;">
+            <p>Perfil</p>
+            <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="main-layout">
+
+        <!-- 2. BARRA LATERAL (SIDEBAR) -->
+        <aside class="sidebar">
+            <nav class="menu-calculos">
+                
+                <!-- Botón Activo en Muro -->
+                <a href="muro.html" class="btn-menu active">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    Calcular muro
+                </a>
+
+                <a href="viga.html" class="btn-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    Calcular viga
+                </a>
+
+                <a href="columnas.html" class="btn-menu">
+                    <i class="fa-solid fa-columns"></i>
+                    Calcular columnas
+                </a>
+
+                <a href="contrapiso.html" class="btn-menu">
+                    <i class="fa-solid fa-layer-group"></i>
+                    Calcular contrapiso
+                </a>
+
+                <a href="techo.html" class="btn-menu">
+                    <i class="fa-solid fa-house"></i>
+                    Calcular techo
+                </a>
+
+                <a href="pisos.html" class="btn-menu">
+                    <i class="fa-solid fa-border-all"></i>
+                    Calcular pisos
+                </a>
+
+                <a href="pintura.html" class="btn-menu">
+                    <i class="fa-solid fa-paint-roller"></i>
+                    Calcular pintura
+                </a>
+
+                <!-- Botón para Salir -->
+                <a href="index.html" class="btn-logout">
+                    <i class="fa-solid fa-person-walking-arrow-right"></i>
+                    Cerrar sesión
+                </a>
+
+            </nav>
+        </aside>
+        
+        <!-- 3. ÁREA DE CÁLCULO DE VIGA -->
+        <main class="content-area">
+            <div class="calculator-container">
+                
+                <!-- Título principal -->
+                <h2 class="section-title">
+                    <i class="fa-solid fa-bars" style="color: #d9534f;"></i> Calcular viga de hormigon:
+                </h2>
+
+                <!-- Tarjeta Gris: Entradas de Datos -->
+                <div class="card-inputs">
+                    <h3 class="card-title">Datos de la viga</h3>
+
+                    <!-- Única Fila: Largo de la viga -->
+                    <div class="form-row">
+                        <label for="largo" class="row-label">Largo de la viga (m):</label>
+                        <input type="number" id="largo" step="0.01" class="calc-input">
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="actions">
+                        <button type="button" class="btn-calc">Calcular</button>
+                        <button type="button" class="btn-clear">Limpiar</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Verde: Resultados -->
+                <div class="card-results">
+                    <h3 class="results-title">Resultado</h3>
+                    <div class="results-content">
+                        <!-- Los resultados irán aquí -->
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    <script src="calculos.js" defer></script>
+</body>
+</html>
