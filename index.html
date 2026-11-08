@@ -18,21 +18,31 @@
         </div>
         <div class="right-panel">
         <div class="login-card">
-        <form class="form-login" action="panelprincipal.html" method="post">
+        <form class="form-login" id="form-login" novalidate>
             <h2>INICIAR SESIÓN</h2>
-<div class="circle-user">
-            <i class="fa-solid fa-circle-user"></i>
-            <input type="text" id="username" name="username" placeholder="Usuario" required>
-        </div>
-            <div class="circle-password">
-            <i class="fa-solid fa-lock"></i>
-                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <div class="circle-user">
+                <i class="fa-solid fa-circle-user"></i>
+                <input type="text" id="username" name="usuario" placeholder="Usuario o correo" autocomplete="username" required>
             </div>
-        <div class="ingresar">
-                        <button type="submit" class="submit">Ingresar</button>
-                    </div>
-                    
-                    <p>¿No tienes una cuenta?</p>
-                    <div class="register-link">
-                        <a href="register.html">Regístrate</a>
+            <div class="circle-password">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Contraseña" autocomplete="current-password" required>
+            </div>
+
+            <p id="mensaje" class="form-message" role="status" aria-live="polite"></p>
+
+            <div class="ingresar">
+                <button type="submit" class="submit">Ingresar</button>
+            </div>
+
+            <p>¿No tienes una cuenta?</p>
+            <div class="register-link">
+                <a href="register.html">Regístrate</a>
+            </div>
+        </form>
+        </div>
+        </div>
     </div>
+    <script src="auth.js" defer></script>
+</body>
+</html>

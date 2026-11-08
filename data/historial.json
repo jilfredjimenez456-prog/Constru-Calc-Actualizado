@@ -1,62 +1,60 @@
 [
   {
-    "id": 5,
-    "tipo": "Muro de ladrillo",
-    "pagina": "muro.html",
-    "fecha": "2026-10-26T00:37:13.793Z",
+    "id": 14,
+    "tipo": "Columnas de concreto",
+    "pagina": "columnas.html",
+    "fecha": "2026-11-07T18:52:00.430Z",
     "datos": {
-      "espesor": "30",
-      "longitud": "21",
-      "altura": "15"
+      "largo": "255"
     },
-    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n315 m²\nCemento\n4.788 kg\nArena\n36,23 m³\nLadrillos\n37.800 unidades"
+    "resultado": "Materiales necesarios para la columna\nCemento\n1.912,5 kg\nArena\n4,08 m³\nPiedra\n4,08 m²\nHierro del 10\n1.530 m\nHierro del 4\n765 m\n\nSe aplicaron las cantidades por metro lineal."
   },
   {
-    "id": 4,
-    "tipo": "Muro de ladrillo",
-    "pagina": "muro.html",
-    "fecha": "2026-10-26T00:30:14.902Z",
+    "id": 13,
+    "tipo": "Techo",
+    "pagina": "techo.html",
+    "fecha": "2026-11-07T18:50:31.392Z",
     "datos": {
-      "espesor": "30",
-      "longitud": "120",
-      "altura": "320"
+      "espesor": "52",
+      "ancho": "25",
+      "longitud": "63"
     },
-    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n38.400 m²\nCemento\n583.680 kg\nArena\n4.416 m³\nLadrillos\n4.608.000 unidades"
+    "resultado": "Superficie y materiales necesarios\nSuperficie del techo\n1.575 m²\nCemento\n51.975 kg\nArena\n113,4 m³\nPiedra\n113,4 m³\nHierro del 8\n11.025 m\nHierro del 6\n6.300 m\n\nSe define las cantidades por m²; por eso se usa ancho × largo."
   },
   {
-    "id": 3,
+    "id": 12,
     "tipo": "Contrapiso",
     "pagina": "contrapiso.html",
-    "fecha": "2026-10-26T00:08:14.948Z",
+    "fecha": "2026-11-03T01:52:43.572Z",
     "datos": {
       "espesor": "25",
-      "ancho": "265",
-      "longitud": "124"
+      "ancho": "45",
+      "longitud": "31"
     },
-    "resultado": "Volumen y materiales necesarios\nVolumen del contrapiso\n821.500 m³\nCemento\n86.257.500 kg\nArena\n369.675 m³\nPiedra\n739.350 m³"
+    "resultado": "Volumen y materiales necesarios\nVolumen del contrapiso\n34.875 m³\nCemento\n3.661.875 kg\nArena\n15.693,75 m³\nPiedra\n31.387,5 m³"
   },
   {
-    "id": 2,
+    "id": 11,
     "tipo": "Muro de ladrillo",
     "pagina": "muro.html",
-    "fecha": "2026-10-26T00:02:11.117Z",
+    "fecha": "2026-11-03T00:04:49.743Z",
     "datos": {
       "espesor": "30",
-      "longitud": "124",
-      "altura": "265"
+      "longitud": "28",
+      "altura": "38"
     },
-    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n32.860 m²\nCemento\n499.472 kg\nArena\n3.778,9 m³\nLadrillos\n3.943.200 unidades"
+    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n1.064 m²\nCemento\n16.172,8 kg\nArena\n122,36 m³\nLadrillos\n127.680 unidades"
   },
   {
-    "id": 1,
+    "id": 10,
     "tipo": "Muro de ladrillo",
     "pagina": "muro.html",
-    "fecha": "2026-10-26T00:02:05.422Z",
+    "fecha": "2026-10-26T15:00:09.330Z",
     "datos": {
-      "espesor": "20",
-      "longitud": "124",
-      "altura": "265"
+      "espesor": "30",
+      "longitud": "30",
+      "altura": "65"
     },
-    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n32.860 m²\nCemento\n358.174 kg\nArena\n2.957,4 m³\nLadrillos\n2.957.400 unidades"
+    "resultado": "Superficie y materiales necesarios\nSuperficie del muro\n1.950 m²\nCemento\n29.640 kg\nArena\n224,25 m³\nLadrillos\n234.000 unidades"
   }
 ]

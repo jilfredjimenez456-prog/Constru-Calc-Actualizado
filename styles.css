@@ -539,3 +539,26 @@ body {
 .calc-result-list li strong { text-align: right; }
 .calc-error { color: #9f2020; background: #fff0f0; border: 1px solid #f0b7b7; border-radius: 8px; padding: 12px; }
 .calc-note { font-size: .9rem; line-height: 1.5; margin-top: 12px; }
+
+/* ---------- Mensajes de los formularios de login y registro ---------- */
+.form-message {
+  min-height: 1.6vw;
+  margin: 0.2vw 0 0.8vw;
+  font-size: 1.1vw;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.form-message.error { color: #b00020; }
+.form-message.ok { color: #176b45; }
+.form-message.info { color: #1e62b4; }
+
+.register-link a {
+  color: #1e62b4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover { text-decoration: underline; }
+
+.submit:disabled { opacity: 0.6; cursor: not-allowed; }

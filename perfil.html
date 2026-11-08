@@ -13,7 +13,7 @@
     <header class="header-dashboard">
         <div class="header-info">
             <img class="logo-header" src="img/logo.png" alt="logo">
-            <h1>Bienvenido Usuario ¿Que deseas calcular hoy?</h1>
+            <h1>Bienvenido <span data-sesion="usuario">Usuario</span> ¿Que deseas calcular hoy?</h1>
         </div>
         <!-- Enlace activo de perfil -->
         <a href="perfil.html" class="header-user" style="text-decoration: none; color: white;">
@@ -84,7 +84,7 @@
                         <div class="profile-avatar">
                             <i class="fa-solid fa-user"></i>
                         </div>
-                        <h4 class="profile-name">Jilfred Jimenez Ch.</h4>
+                        <h4 class="profile-name" data-sesion="usuario">Jilfred Jimenez Ch.</h4>
                     </div>
 
                     <!-- Formulario Centrado -->
@@ -93,7 +93,7 @@
                         <!-- Campo 1: Correo -->
                         <div class="profile-field">
                             <label class="profile-label">Correo:</label>
-                            <input type="email" value="jilfredjimenez456@gmail.com" class="profile-input" readonly>
+                            <input type="email" value="jilfredjimenez456@gmail.com" class="profile-input" data-sesion="correo" readonly>
                         </div>
 
                         <!-- Campo 2: Cambiar nombre de usuario -->
@@ -122,5 +122,6 @@
 
     </div>
 
+    <script src="sesion.js" defer></script>
 </body>
 </html>

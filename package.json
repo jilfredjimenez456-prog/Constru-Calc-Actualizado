@@ -1,9 +1,0 @@
-{
-  "name": "construcalc-backend",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Backend REST CRUD para ConstrucCalc con almacenamiento JSON",
-  "scripts": {
-    "start": "node server.js"
-  }
-}

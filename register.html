@@ -17,43 +17,50 @@
     <!-- LADO IZQUIERDO: Fondo Azul con la Tarjeta de Registro -->
     <div class="right-panel">
       <div class="login-card">
-        <form class="form-login" action="" method="post">
+        <form class="form-login" id="form-registro" novalidate>
           <h2>REGÍSTRATE</h2>
 
           <!-- Campo Usuario -->
           <div class="circle-user">
             <i class="fa-solid fa-circle-user"></i>
-            <input type="text" id="username" name="username" placeholder="Usuario" required>
+            <input type="text" id="username" name="usuario" placeholder="Usuario" minlength="3" maxlength="20" autocomplete="username" required>
           </div>
-        
+
+          <!-- Campo Correo -->
           <div class="circle-email">
-          <i class="fa-solid fa-envelope"></i>
-          <input type="email"placeholder="Correo"maxlength="30"pattern="[a-zA-Z0-9]+(/.)*@([a-zA-Z0-9]+)*[.][a-zA-Z]{2,5}"required>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" name="correo" placeholder="Correo" maxlength="60" autocomplete="email" required>
           </div>
-
-
 
           <!-- Campo Contraseña -->
           <div class="circle-password">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" id="password" name="password" placeholder="Contraseña"pattern="[0-9]{8,25}"required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" minlength="8" maxlength="64" autocomplete="new-password" required>
           </div>
 
           <div class="circle-password">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" id="password" name="password" placeholder="Confirmar Contraseña" pattern="[0-9]{8,25}"required>
+            <input type="password" id="confirm-password" name="confirmar" placeholder="Confirmar Contraseña" minlength="8" maxlength="64" autocomplete="new-password" required>
           </div>
-          <h3>Perfl</h3>
+
+          <h3>Perfil</h3>
           <div class="select-profile">
-          
-          <select id="profile"name="profile"required >
-            <option value=""disable selected hidden>Seleccionar Perfil </option>
-            <option value="Administrador">Admistrador</option>
-            <option value="Empleado">Empleado</option>
-          </select>
-        </div>
+            <select id="profile" name="perfil" required>
+              <option value="" disabled selected hidden>Seleccionar Perfil</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Empleado">Empleado</option>
+            </select>
+          </div>
+
+          <p id="mensaje" class="form-message" role="status" aria-live="polite"></p>
+
           <div class="ingresar">
-            <button type="submit" class="submit">Ingresar</button>
+            <button type="submit" class="submit">Registrarme</button>
+          </div>
+
+          <p>¿Ya tienes una cuenta?</p>
+          <div class="register-link">
+            <a href="index.html">Inicia sesión</a>
           </div>
         </form>
       </div>
@@ -65,5 +72,6 @@
     </div>
 
   </div>
+  <script src="auth.js" defer></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
        return `<article class="history-card"><div class="history-card-head"><div><h3>${escapeHtml(item.tipo)}</h3><div class="history-date">${escapeHtml(dateText(item.fecha))}</div></div><button type="button" class="history-delete" data-delete="${Number(item.id)}">Eliminar</button></div><div class="history-data">${data || 'Sin datos de entrada registrados'}</div><div class="history-result">${escapeHtml(item.resultado)}</div></article>`;
      }).join('');
    } catch (error) {
-     list.innerHTML = '<div class="history-empty">No se pudo cargar el historial. Verifica que hayas iniciado el servidor con node server_historial.js.</div>';
+     list.innerHTML = '<div class="history-empty">No se pudo cargar el historial. Verifica que hayas iniciado el servidor con python server.py.</div>';
      notice.textContent = error.message;
    }
  }
